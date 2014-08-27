@@ -1,0 +1,15 @@
+<div class="app-body">
+	<div class="app-content">
+		<div class="scrollable">
+			<div class="scrollable-content">
+				<div class="list-group">
+					<a ng-repeat="evento in eventi" ng-click="caricaEvento(evento.id_evento)" class="list-group-item">
+						<img src="{{evento.url_immagine}}" class="logo">
+						{{evento.nome}} - {{evento.data}}
+						<i class="fa fa-chevron-right pull-right"></i>
+      				</a>
+    			</div>
+  			</div>
+		</div>
+	</div>
+</div>
